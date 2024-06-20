@@ -4,7 +4,7 @@ class CreateComments < ActiveRecord::Migration[7.0]
       t.string :commenter
       t.text :body
       t.string :status
-      t.bigint :article_id
+      t.references :article
 
       t.timestamps
     end
